@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { moviesList } from "../DummyData/DummyData";
 import "./Home.scss";
 import { Link } from "react-router-dom";
@@ -9,7 +8,6 @@ export default function Home() {
       <div className="headerDiv">
         <h1>Mini Netflix</h1>
       </div>
-
       <div className="cards">
         {moviesList.map((movie) => (
           <div className="card">

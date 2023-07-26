@@ -1,6 +1,6 @@
 import "./App.scss";
 import Home from "./components/Home/Home";
-import { BrowserRouter, Route, Routes, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MovieDetails from "./components/Movie/Movie";
 function App() {
   return (

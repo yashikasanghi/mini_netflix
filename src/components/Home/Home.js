@@ -10,14 +10,13 @@ export default function Home() {
       </div>
       <div className="cards">
         {moviesList.map((movie) => (
-          <div className="card">
+          <div className="card" key={movie.title}>
             <Link to={`/movie/${encodeURIComponent(movie.title)}`}>
               <img src={movie.posterUrl} alt={movie.title} />
             </Link>
           </div>
         ))}
       </div>
-
       <div></div>
     </div>
   );

@@ -34,46 +34,44 @@ const MovieDetails = () => {
         alt={movieDetails.Title}
       />
       <div className="movieDetails movieSubContainers">
-        <div style={{ display: "flex" }}>
-          <h1>{movieDetails.Title}</h1>
-          <div className="ratingsDiv">
-            <span className="ratingSpan">
-              {movieDetails.imdbRating} <br />
-            </span>
-            <span className="ratingSource">IMDB Rating</span>
-          </div>
-        </div>
+        <h1>{movieDetails.Title}</h1>
 
         <p>{movieDetails.Plot}</p>
         <table>
-          <tr>
-            <td className="movieDetailsTitle">Director:</td>
-            <td>{movieDetails.Director}</td>
-          </tr>
-          <tr>
-            <td className="movieDetailsTitle">Casts:</td>
-            <td>{movieDetails.Actors}</td>
-          </tr>
-          <tr>
-            <td className="movieDetailsTitle">Duration:</td>
-            <td>{movieDetails.Runtime}</td>
-          </tr>
-          <tr>
-            <td className="movieDetailsTitle">Release Date:</td>
-            <td>{movieDetails.Released}</td>
-          </tr>
-          <tr>
-            <td className="movieDetailsTitle">Genres:</td>
-            <td>{movieDetails.Genre}</td>
-          </tr>
-          <tr>
-            <td className="movieDetailsTitle">Language:</td>
-            <td>{movieDetails.Language}</td>
-          </tr>
-          <tr>
-            <td className="movieDetailsTitle">Awards:</td>
-            <td>{movieDetails.Awards}</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td className="movieDetailsTitle">Director:</td>
+              <td>{movieDetails.Director}</td>
+            </tr>
+            <tr>
+              <td className="movieDetailsTitle">Casts:</td>
+              <td>{movieDetails.Actors}</td>
+            </tr>
+            <tr>
+              <td className="movieDetailsTitle">Duration:</td>
+              <td>{movieDetails.Runtime}</td>
+            </tr>
+            <tr>
+              <td className="movieDetailsTitle">Release Date:</td>
+              <td>{movieDetails.Released}</td>
+            </tr>
+            <tr>
+              <td className="movieDetailsTitle">Genres:</td>
+              <td>{movieDetails.Genre}</td>
+            </tr>
+            <tr>
+              <td className="movieDetailsTitle">Language:</td>
+              <td>{movieDetails.Language}</td>
+            </tr>
+            <tr>
+              <td className="movieDetailsTitle">Awards:</td>
+              <td>{movieDetails.Awards}</td>
+            </tr>
+            <tr>
+              <td className="movieDetailsTitle">IMDB Rating</td>
+              <td className="ratingSpan">{movieDetails.imdbRating}</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>
